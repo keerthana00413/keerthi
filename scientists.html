@@ -4,7 +4,101 @@
     <meta charset="UTF-8">
     <title>Scientists and Their Innovations</title>
     <style>
+           /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         body {
+            background-color: #f4f9ff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1e3c72;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        .container {
+            padding: 30px;
+        }
+
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+
+        /* Topics Grid */
+        .topics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .topic {
+            background: #e8f0fe;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .topic h3 {
+            margin-bottom: 8px;
+            color: #0f2027;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f2027;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+   body {
             font-family: Arial, Helvetica, sans-serif;
             background-color: #f4f6f8;
             margin: 0;
@@ -58,6 +152,21 @@
     </style>
 </head>
 <body>
+    <header>
+    <h1>Welcome to Scientific World</h1>
+    <p>Exploring Science, Technology & Innovation<br>
+        The science of Today is the technology of tomorrow<br>
+        -Edward Teller
+    </p>
+</header>
+
+<nav>
+    <a href="home page.html">Home</a>
+    <a href="scientists.html">Scientists & Inventions</a>
+    <a href="#">Creativity</a>
+    <a href="#">Technology</a>
+    <a href="#">News of Science</a>
+</nav>
 
 <header>
     <h1>Scientists and Their Inventions</h1>
