@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile | Technology World</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #0b1120;
+            color: #e5e7eb;
+        }
+
+        /* Navbar */
+        header {
+            background-color: #020617;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #e5e7eb;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #020617, #0b1120);
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 1.1rem;
+            color: #cbd5f5;
+        }
+
+        .hero button {
+            margin-top: 30px;
+            padding: 12px 30px;
+            background-color: #38bdf8;
+            color: #020617;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #0ea5e9;
+        }
+
+        /* Section */
+        section {
+            padding: 70px 40px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section h3 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #38bdf8;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #020617;
+            padding: 25px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h4 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #cbd5f5;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #020617; 
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #e5e7eb;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #020617;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      overflow: hidden;
+    }
+
+    /* Header */
+    .profile-header {
+      display: flex;
+      align-items: center;
+      padding: 30px;
+      background: #020617;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    .profile-header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      margin-right: 24px;
+    }
+
+    .profile-header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .profile-header p {
+      margin-top: 6px;
+      color: #38bdf8;
+    }
+
+    /* Content */
+    .profile-content {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .section h2 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      border-left: 4px solid #38bdf8;
+      padding-left: 10px;
+    }
+
+    .section p,
+    .section li {
+      color: #cbd5f5;
+      line-height: 1.6;
+    }
+
+    .details ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .details li {
+      margin-bottom: 8px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #1e293b;
+      padding: 6px 12px;
+      border-radius: 14px;
+      margin: 4px;
+      font-size: 0.85rem;
+    }
+
+    /* Footer */
+    .profile-footer {
+      padding: 20px 30px;
+      border-top: 1px solid #1e293b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .profile-footer a {
+      color: #38bdf8;
+      text-decoration: none;
+      margin-right: 15px;
+      font-size: 0.9rem;
+    }
+
+    .profile-footer a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      background: #38bdf8;
+      color: #020617;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+    }
+
+    @media (max-width: 768px) {
+      .profile-content {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+        <h1>Technoin</h1>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="security.html">Security</a>
+            <a href="cont.html">Contact</a>
+            <a href="cha.html">Chat With Us</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+
+  <div class="container">
+
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <div>
+        <h1>Rahul Sharma</h1>
+        <p>Full Stack Developer | Technoin</p>
+      </div>
+    </div>
+
+    <!-- Profile Content -->
+    <div class="profile-content">
+
+      <div class="section">
+        <h2>About User</h2>
+        <p>
+          Enthusiastic technology professional with a passion for building
+          scalable applications, exploring AI, and contributing to innovative
+          tech solutions.
+        </p>
+      </div>
+
+      <div class="section details">
+        <h2>User Details</h2>
+        <ul>
+          <li><strong>Email:</strong> rahul@techworld.com</li>
+          <li><strong>Phone:</strong> +91 98765 43210</li>
+          <li><strong>Location:</strong> India</li>
+          <li><strong>Member Since:</strong> 2024</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Account Information</h2>
+        <p>Status: <strong>Active</strong></p>
+        <p>Last Login: 1 day ago</p>
+        <p>Projects Completed: 15</p>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="profile-footer">
+      <div>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+      <button>Edit Profile</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
