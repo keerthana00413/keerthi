@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology World</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #0b1120;
+            color: #e5e7eb;
+        }
+
+        /* Navbar */
+        header {
+            background-color: #020617;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #e5e7eb;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #020617, #0b1120);
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 1.1rem;
+            color: #cbd5f5;
+        }
+
+        .hero button {
+            margin-top: 30px;
+            padding: 12px 30px;
+            background-color: #38bdf8;
+            color: #020617;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #0ea5e9;
+        }
+
+        /* Section */
+        section {
+            padding: 70px 40px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section h3 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #38bdf8;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #020617;
+            padding: 25px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h4 {
+            color: #090a0a;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #eaeaf8;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #020617;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Technoin</h1>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="security.html">Security</a>
+            <a href="cont.html">Contact</a>
+            <a href="cha.html">Chat With Us</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+
+    <section>
+        <h3>Invention to Technologies</h3>
+        <div class="cards">
+
+            <div class="card">
+                <h4><a href="sci.html">Scientific World</h4>
+                <p>The scientific world that is invention often use 
+                    science and technology to improve how we live, work, and 
+                    communicate.</a></p>
+            </div>
+
+            <div class="card">
+                <h4><a href="ai.html">Technology World</h4>
+                <p>Build responsive and interactive websites using modern tools and frameworks.</a></p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Technology World | All Rights Reserved
+    </footer>
+
+</body>
+</html>
